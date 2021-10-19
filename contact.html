@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- AOS -->
+      <!--------------------- AOS LIBRARY ------------------------------->
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+
+        <nav>
+            <a href="index.html"><img src="./images/Dublin_logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./course.html">COURSE</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>CONTACT US</h1>
+    </section>
+    <!-- CONTACT US -->
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1527.5637116313583!2d-6.2635404494822!3d53.38335244170654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e1b2f9d5d03%3A0x12bb45984107c2a8!2sDublin%20City%20University!5e0!3m2!1sen!2s!4v1634630351008!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" data-aos="flip-up"></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row"> 
+            <div class="contact-col">
+                <div data-aos="flip-up">
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ ,ABC building</h5>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </span>
+                </div>
+                <div data-aos="flip-up">
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+92 3112548324</h5>
+                        <p>Monday to Saturday, 10am to 7pm</p>
+                    </span>
+                </div>
+                <div data-aos="flip-up">
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>usamarehan012@gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php">
+                    <input type="text" name="name"placeholder="Enter your name" data-aos="flip-up">
+                    <input type="email" name="email"placeholder="Enter your Email" data-aos="flip-up">
+                    <input type="text" name="subject"placeholder="Enter your subject" data-aos="flip-up">
+                    <textarea name="Massege" id="" cols="30" rows="10" placeholder="Massege" data-aos="flip-up"></textarea>
+                    <button type="submit" class="hero-btn red-btn" data-aos="flip-up">Send Massege</button>
+                </form>
+            </div>
+        </div>
+    </section>
+ <!-- footer -->
+   <section class="footer">
+       
+       <h4 >Aboout Us</h4>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore error ipsum illum aliquid commodi iure consectetur minima possimus, ipsa aspernatur nobis quibusdam ipsam mollitia fuga vero. Unde, inventore magnam debitis accusantium vitae deserunt illo placeat vel, aspernatur modi dignissimos sed est perferendis eveniet laudantium ad consectetur</p>
+       <div class="icons">
+           <i class="fa fa-facebook" data-aos="flip-up"></i>
+           <i class="fa fa-instagram" data-aos="flip-up"></i>
+           <i class="fa fa-twitter" data-aos="flip-up"></i>
+           <i class="fa fa-linkedin" data-aos="flip-up"></i>
+       </div>
+       <p>Made with <i class="fa fa-heart"></i>&nbsp;by USAMA REHAN</p>
+   </section>
+           
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+         <!-- AOS -->
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+             AOS.init();
+           </script>
+</body>
+
+</html>

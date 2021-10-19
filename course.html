@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!--------------------- AOS LIBRARY ------------------------------->
+     <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="sub-header">
+
+        <nav>
+            <a href="index.html"><img src="./images/Dublin_logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./course.html">COURSE</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+       <h1>OUR COURSES</h1>
+    </section>
+     <!-- COURSE -->
+     <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio voluptates iusto quibusdam ut, hic nesciunt
+            ratione voluptate ab est. Sit et non voluptatem delectus quibusdam molestiae praesentium facilis, similique
+            ad?</p>
+        <div class="row">
+            <div class="course-col" data-aos="flip-left">
+                <h3>intermediate</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, voluptatem deserunt architecto quas, enim expedita cupiditate explicabo id in eaque doloremque libero exercitationem quasi ipsa ut reprehenderit esse accusamus mollitia rem temporibus, suscipit consequatur sint sequi? Eveniet consequatur quae commodi voluptate fugiat, non sit inventore sequi officia doloribus enim repellendus recusandae </p>
+            </div>
+            <div class="course-col" data-aos="flip-left">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, eius. Fugit, quisquam. Repellat iusto hic exercitationem natus mollitia, aut praesentium quod in, porro, velit explicabo magnam eligendi quas! Veritatis libero ab mollitia maxime molestias sequi ipsam odio! Non eveniet perspiciatis facilis autem quaerat optio? Possimus eveniet quis similique harum ex voluptatem fugiat dolor odio tenetur voluptatum?</p>
+            </div>
+            <div class="course-col" data-aos="flip-left">
+                <h3>Post graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptate et neque. Maxime quasi libero, voluptatem nihil voluptas cum perspiciatis expedita fugit illo, ab, debitis saepe beatae ipsum consectetur ullam officiis similique quibusdam. Aut enim vel aliquid at voluptatum, perspiciatis quos dignissimos quia sapiente, rem nostrum dolorem omnis quidem magni ab inventore autem, molestiae doloribus ad!</p>
+            </div>
+        </div>
+        </div>
+    </section>
+<!-- facilities -->
+<section class="facilities">
+    <h1>OUR facilities</h1>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque.</P>
+    <div class="row">
+        <div class="facilities-col"   data-aos="flip-down">
+            <img src="./images/library.png" alt="">
+            <h3>World Class library</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad illum nam maxime nisi. Aspernatur possimus voluptas, qui unde pariatur quibusdam magnam </p>
+        </div>
+        <div class="facilities-col"   data-aos="flip-down">
+            <img src="./images/basketball.png" alt="">
+            <h3>Largest Play Gorund</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad illum nam maxime nisi. Aspernatur possimus voluptas, qui unde pariatur quibusdam magnam </p>
+        </div>
+        <div class="facilities-col"   data-aos="flip-down">
+            <img src="./images/cafeteria.png" alt="">
+            <h3>Tasty and Healthy</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad illum nam maxime nisi. Aspernatur possimus voluptas, qui unde pariatur quibusdam magnam </p>
+        </div>
+    </div>
+</section>
+ 
+ <!-- footer -->
+   <section class="footer">
+       <h4>Aboout Us</h4>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore error ipsum illum aliquid commodi iure consectetur minima possimus, ipsa aspernatur nobis quibusdam ipsam mollitia fuga vero. Unde, inventore magnam debitis accusantium vitae deserunt illo placeat vel, aspernatur modi dignissimos sed est perferendis eveniet laudantium ad consectetur</p>
+       <div class="icons">
+           <i class="fa fa-facebook" data-aos="flip-up"></i>
+           <i class="fa fa-instagram" data-aos="flip-up"></i>
+           <i class="fa fa-twitter" data-aos="flip-up"></i>
+           <i class="fa fa-linkedin" data-aos="flip-up"></i>
+       </div>
+       <p>Made with <i class="fa fa-heart"></i>&nbsp;by USAMA REHAN</p>
+   </section>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0"
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px"
+        }
+    </script>
+         <!-- AOS -->
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+             AOS.init();
+           </script>
+</body>
+
+</html>
